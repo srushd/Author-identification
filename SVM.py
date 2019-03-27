@@ -19,10 +19,12 @@ sys.path.append("C:/Users/Srushti/Desktop/New folder (3)/ML udacity/ud120-projec
 ### labels_train and labels_test are the corresponding item labels
 features_train, features_test, labels_train, labels_test = preprocess()
 from sklearn.svm import SVC
-
-
+features_train = features_train[:len(features_train)//100] 
+labels_train = labels_train[:len(labels_train)//100] 
 clf = SVC(kernel='linear',gamma='auto')
+
 t0 = time()
+
 clf.fit(features_train, labels_train)
 print ("\ntraining time:", round(time()-t0,3), "s")
 
