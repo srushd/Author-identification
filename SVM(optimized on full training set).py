@@ -50,4 +50,4 @@ from sklearn.metrics import accuracy_score
 accuracy = accuracy_score(pred, labels_test)
 
 print ('\naccuracy = {0}'.format(accuracy))
-
+print(sum(pred))
