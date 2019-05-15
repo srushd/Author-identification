@@ -10,7 +10,7 @@
     
 import sys
 from time import time
-sys.path.append("C:/Users/Srushti/Desktop/New folder (3)/ML udacity/ud120-projects-master/tools")
+sys.path.append("C:/Users/Srushti/Desktop/ML/ML udacity/ud120-projects-master/tools")
 
 
 
@@ -37,4 +37,6 @@ from sklearn.metrics import accuracy_score
 accuracy = accuracy_score(pred, labels_test)
 
 print ('\naccuracy = {0}'.format(accuracy))
-
+print(pred[10])
+print(pred[26])
+print(pred[50])
